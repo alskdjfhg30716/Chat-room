@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
     exit;
 }
 
-// 資料庫連接配置
+// 資料庫連線設定
 $host = 'localhost';
 $dbName = 'db_course';
 $user = 'root';
