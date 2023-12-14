@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>聊天室</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="chat.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="chat.js"></script> <!-- 確保這是指向新的 WebSocket 版本的 chat.js -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* 基本樣式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        #all_messages {
+            width: 90%;
+            max-width: 600px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            height: 90%;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        /* 輸入區塊的容器 */
+        div.input-container {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #sender, #message {
+            flex-grow: 1;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #sender {
+            width: 30px;
+        }
+
+        #message {
+            width: 40%;
+        }
+
+        #btn_send {
+            padding: 10px;
+            flex-basis: 15%;
+            cursor: pointer;
+        }
+
+        /* 小於 600px 的螢幕 */
+        @media (max-width: 600px) {
+            #btn_send {
+                flex-basis: 30%;
+            }
+        }
+
+        /* 更小的螢幕 */
+        @media (max-width: 400px) {
+            #btn_send {
+                flex-basis: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3>聊天室</h3>
+    <div id="all_messages"></div>
+    <div>
+        <input id="sender" type="text" placeholder="暱稱" />
+        <input id="message" type="text" placeholder="您的訊息" />
+        <button onclick="sendMessage()" id="btn_send">送出</button>
+    </div>
+</body>
+
+</html>

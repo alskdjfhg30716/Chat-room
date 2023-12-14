@@ -1,0 +1,26 @@
+#all_messages {
+  width: 800px;
+  height: 480px;
+  padding: 18px 10px;
+  border-radius: 8px;
+  border: solid 1px rgb(200, 221, 236);
+  overflow-y: auto;
+  margin-bottom: 12px;
+}
+input[type="text"],
+button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: solid 1px rgb(157, 208, 242);
+}
+#sender {
+  width: 90px;
+}
+#message {
+  /* width: 560px; */
+  margin-left: 12px;
+}
+#btn_send {
+  width: 80px;
+  margin-left: 12px;
+}
