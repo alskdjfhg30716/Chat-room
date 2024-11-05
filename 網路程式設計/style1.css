@@ -1,0 +1,33 @@
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box1-1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 800px;
+    border: 3px solid #000000;
+    justify-content: space-between;
+}
+.box1-1-1 {
+    flex: 1 1 48%;
+    height: 48%;
+    margin: 5px;
+    text-align: center;
+    
+    border: 3px solid #000000;
+    box-sizing: border-box;
+}
+a {
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #ff9616;
+    border: 3px solid #000000;
+    line-height: 300px; 
+}

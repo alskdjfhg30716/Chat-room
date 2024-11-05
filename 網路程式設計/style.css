@@ -1,0 +1,19 @@
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#run {
+    height: 100px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 100px; 
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    background: #ff9616;
+    border: 3px solid #000000;
+}
